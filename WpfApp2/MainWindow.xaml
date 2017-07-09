@@ -1,0 +1,35 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:System="clr-namespace:System;assembly=mscorlib" x:Name="BurstPendingChecker" x:Class="WpfApp1.MainWindow"
+        mc:Ignorable="d"
+        Title="Burst Pending Checker v0.2" Height="223.081" Width="441" ResizeMode="CanMinimize">
+    <Grid>
+        <StackPanel>
+            <DockPanel>
+                <Label Content="ID:" Margin="3"/>
+                <TextBox x:Name="id" Height="24" TextWrapping="Wrap" Text="13017078016166112851" Margin="3" HorizontalAlignment="Left" Width="313"/>
+                <Button x:Name="go" Content="GO!" Width="75" Margin="3" HorizontalAlignment="Left" Click="go_Click"/>
+            </DockPanel>
+            <DockPanel>
+                <Label Margin="3" Content="Your pending balance:"/>
+                <Label Margin="3" x:Name="pending" Content="0"/>
+
+            </DockPanel>
+            <DockPanel>
+                <Label Content="Auto refresh every 30 sec" HorizontalAlignment="Left" Margin="3"/>
+                <Label Content="Made by: sOnt" HorizontalAlignment="Right" Margin="3" FontSize="10" />
+                <TextBox x:Name="brst" Margin="3" IsReadOnly="True" BorderThickness="1" TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Center" Text="BURST-3DLM-HMZL-MVKE-DMHBB"/>
+            </DockPanel>
+            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="94" Width="436">
+                
+            </ListBox>
+        </StackPanel>
+    </Grid>
+    
+    
+    
+</Window>
